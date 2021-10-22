@@ -15,7 +15,7 @@ const all = () => {
 }
 
 const avg = () => {
-    return item.reduce((acc, curr) => acc + curr, 0) / item.length
+    return item.reduce((acc, curr) => acc + curr) / item.length
 }
 
 

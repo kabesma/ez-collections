@@ -1,0 +1,25 @@
+{
+  "name": "ez-collections",
+  "version": "1.0.0",
+  "description": "The package provides a fluent, convenient wrapper for working with arrays of data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kabesma/ez-collections.git"
+  },
+  "keywords": [
+    "collect",
+    "collections",
+    "array",
+    "backend"
+  ],
+  "author": "Muh. Akil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kabesma/ez-collections/issues"
+  },
+  "homepage": "https://github.com/kabesma/ez-collections#readme"
+}

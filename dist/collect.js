@@ -9,7 +9,8 @@ function collect(args) {
 	return {
         'all' : all,
         'avg' : avg,
-        'chunk' : chunk
+        'chunk' : chunk,
+        'collapse' : collapse
     }
 }
 
@@ -34,6 +35,12 @@ const chunk = (param) => {
     return newArr
 }
 
+const collapse = () => {
+    let result = item.reduce(function(prev, next) {
+        return prev.concat(next);
+    })
+    return collect(result)
+}
 
 module.exports = {
     collect,

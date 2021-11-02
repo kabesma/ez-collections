@@ -50,3 +50,22 @@ chunks.all();
 
 // [[1, 2, 3, 4], [5, 6, 7]]
 ```
+
+## collapse
+The collapse method collapses a collection of arrays into a single, flat collection:
+
+```js
+const { collect } = require("ez-collections")
+
+let collection = collect([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+])
+
+let collapsed = collection.collapse()
+
+console.log(collapsed.all())
+
+// [1, 2, 3, 4, 5, 6, 7, 8, 9]
+```

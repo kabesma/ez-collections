@@ -10,13 +10,15 @@ const newArr = []
  * @return {function} The function call
  */
 function collect(args) {
-  item = args
-  return {
-    'all': all,
-    'avg': avg,
-    'chunk': chunk,
-    'collapse': collapse,
-  }
+    if(Array.isArray(args)){
+      item = args
+      return {
+        'all': all,
+        'avg': avg,
+        'chunk': chunk,
+        'collapse': collapse,
+      }
+    }
 }
 
 const all = () => {

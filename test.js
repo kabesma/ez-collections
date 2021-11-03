@@ -27,3 +27,5 @@ let collection = collect([
 let collapsed = collection.collapse()
 
 console.log(collapsed.all())
+let collections = collect([{'name':'Desk', 'price':100}])
+console.log(collections.all())

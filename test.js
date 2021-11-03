@@ -30,5 +30,5 @@ console.log(collapsed.all())
 
 console.log('\n--- Collapse ---')
 let collectionA = collect([{'name':'Desk', 'price':100}])
-let collectionB = collectionA.all()
-console.log(collectionB)
+let collectionB = collectionA.collect()
+console.log(collectionB.all())

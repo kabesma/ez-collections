@@ -40,13 +40,13 @@ console.log(averange)
 The chunk method breaks the collection into multiple, smaller collections of a given size:
 
 ```js
-const { collect } = require("ez-collections");
+const { collect } = require("ez-collections")
 
-let collection = collect([1, 2, 3, 4, 5, 6, 7]);
+let collection = collect([1, 2, 3, 4, 5, 6, 7])
 
-let chunks = collection.chunk(4);
+let chunks = collection.chunk(4)
 
-chunks.all();
+chunks.all()
 
 // [[1, 2, 3, 4], [5, 6, 7]]
 ```
@@ -68,4 +68,18 @@ let collapsed = collection.collapse()
 console.log(collapsed.all())
 
 // [1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+## collect
+The collect method returns a new Collection instance with the items currently in the collection:
+
+```js
+const { collect } = require("ez-collections")
+
+let collectionA = collect([1, 2, 3])
+
+let collectionB = collectionA.collect()
+
+console.log(collectionB.all())
+// [1, 2, 3]
 ```

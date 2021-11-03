@@ -26,6 +26,11 @@ const all = () => {
   return item
 }
 
+const collect = () => {
+  return collect(item)
+}
+
+
 const avg = (param = null) => {
   if (param == null) {
     return item.reduce((acc, curr) => acc + curr) / item.length

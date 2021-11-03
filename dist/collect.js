@@ -17,7 +17,7 @@ function collect(args) {
         'avg': avg,
         'chunk': chunk,
         'collapse': collapse,
-        'collect': collect
+        'collect': collectx
       }
     }
 }
@@ -26,7 +26,7 @@ const all = () => {
   return item
 }
 
-const collect = () => {
+const collectx = () => {
   return collect(item)
 }
 

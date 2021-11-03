@@ -28,7 +28,7 @@ let collapsed = collection.collapse()
 
 console.log(collapsed.all())
 
-console.log('\n--- Collapse ---')
+console.log('\n--- Collect ---')
 let collectionA = collect([{'name':'Desk', 'price':100}])
 let collectionB = collectionA.collect()
 console.log(collectionB.all())

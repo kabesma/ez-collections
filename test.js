@@ -5,7 +5,7 @@ const { collect } = require('./index.js')
 console.log('--- All ---')
 console.log(collect([1, 1, 2, 4]).all())
 
-console.log('--- Average ---')
+console.log('\n--- Average ---')
 console.log(collect([
     {'foo': 10},
     {'foo': 10},
@@ -14,10 +14,10 @@ console.log(collect([
 ]).avg('foo'))
 console.log(collect([1, 1, 2, 4]).avg())
 
-console.log('--- Chunk ---')
+console.log('\n--- Chunk ---')
 console.log(collect([1, 2, 3, 4, 5, 6, 7]).chunk(4))
 
-console.log('--- Collapse ---')
+console.log('\n--- Collapse ---')
 let collection = collect([
     [1, 2, 3],
     [4, 5, 6],
@@ -27,5 +27,8 @@ let collection = collect([
 let collapsed = collection.collapse()
 
 console.log(collapsed.all())
-let collections = collect([{'name':'Desk', 'price':100}])
-console.log(collections.all())
+
+console.log('\n--- Collapse ---')
+let collectionA = collect([{'name':'Desk', 'price':100}])
+let collectionB = collectionA.all()
+console.log(collectionB)

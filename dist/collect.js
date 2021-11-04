@@ -27,12 +27,11 @@ const all = () => {
 }
 
 const avg = (param = null) => {
-  let temp
+  let temp = 0
   if (param == null) {
     return item.reduce((acc, curr) => acc + curr) / item.length
   }
 
-  temp = 0
   item.forEach(
       (val) => temp = temp + val[param],
   )

@@ -18,7 +18,7 @@ function collect(args) {
         'collapse': collapse,
         'collect': collectx,
         'combine': combine,
-        'concat': concats,
+        'concat': concat,
     }
 }
 
@@ -65,7 +65,7 @@ const combine = (param) => {
     return collect(obj)
 }
 
-const concats = (param) => {
+const concat = (param) => {
     let obj = []
     
 //     if (!Array.isArray(param)){
@@ -74,7 +74,7 @@ const concats = (param) => {
 //         })
 //     }
 
-    return collect(item.concat(obj))
+    return collect(item.concat(param))
 //     let obj
 //     if (!Array.isArray(param)){
 //         obj = Object.values(param)

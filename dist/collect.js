@@ -76,12 +76,12 @@ const concat = (param) => {
 
     return collect(item.concat(obj))
 //     let obj
-    if (!Array.isArray(param)){
-        obj = Object.values(param)
-    } else {
-        obj = item.concat(param)
-    }
-    return collect(obj)
+//     if (!Array.isArray(param)){
+//         obj = Object.values(param)
+//     } else {
+//         obj = item.concat(param)
+//     }
+//     return collect(obj)
 }
 
 module.exports = {

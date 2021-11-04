@@ -22,10 +22,6 @@ function collect(args) {
     }
 }
 
-const arr = (...args) => {
-    return args
-}
-
 const all = () => {
   return item
 }
@@ -68,7 +64,7 @@ const combine = (param) => {
 const concat = (param) => {
     let obj = getArrayableItems(param)
     let result = []
-    obj.forEach(val => result = val)
+    obj.forEach(val => result = val[1] ? val[1] : val)
 
     return collect(item.concat(result))
 }

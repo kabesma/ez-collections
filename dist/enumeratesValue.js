@@ -5,3 +5,7 @@ function getArrayableItems(param){
         return param
     }
 }
+
+module.export = {
+    getArrayableItems,
+}

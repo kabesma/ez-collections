@@ -46,6 +46,6 @@ console.log('\n--- Combine ---')
 
 collection = collect(['John Doe']);
 
-let concatenated = collection.concat(['Jane Doe']).concat({['name':'Johnny Doe']});
+let concatenated = collection.concat(['Jane Doe']).concat([{'name':'Johnny Doe'}]);
 
 console.log(concatenated.all())

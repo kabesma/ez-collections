@@ -102,6 +102,8 @@ console.log(combined.all())
 The concat method appends the given array or collection's values onto the end of another collection:
 
 ```js
+const { collect } = require("ez-collections")
+
 let collection = collect(['John Doe'])
 
 let concatenated = collection.concat(['Jane Doe']).concat({'name': 'Johnny Doe'})

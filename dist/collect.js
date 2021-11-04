@@ -17,6 +17,7 @@ function collect(args) {
         'collapse': collapse,
         'collect': collectx,
         'combine': combine,
+        'concat': concat,
       }
     }
 }
@@ -57,6 +58,11 @@ const collectx = () => {
 
 const combine = (param) => {
     const obj = item.reduce((r, e, i) => (r[e]= param[i], r), [])
+    return collect(obj)
+}
+
+const concat = (param) => {
+    let obj = item.concat(param)
     return collect(obj)
 }
 

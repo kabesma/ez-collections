@@ -40,3 +40,12 @@ collection = collect(['name', 'age'])
 let combined = collection.combine(['George', 29])
 
 console.log(combined.all())
+
+
+console.log('\n--- Combine ---')
+
+collection = collect(['John Doe']);
+
+let concatenated = collection.concat(['Jane Doe']).concat({['name':'Johnny Doe']});
+
+console.log(concatenated.all())

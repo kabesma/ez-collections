@@ -20,10 +20,10 @@ The avg method returns the average value of a given key:
 const { collect } = require('ez-collections')
 
 let average = collect([
-    ['foo' => 10],
-    ['foo' => 10],
-    ['foo' => 20],
-    ['foo' => 40]
+    {'foo': 10},
+    {'foo': 10},
+    {'foo': 20},
+    {'foo': 40}
 ]).avg('foo')
 
 console.log(averange)

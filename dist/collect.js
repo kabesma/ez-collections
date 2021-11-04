@@ -67,11 +67,9 @@ const combine = (param) => {
 
 const concat = (param) => {
     let obj = []
-    param.forEach(val => {
-        obj = item.concat(val)
-    })
+//     param.forEach(val => item.concat(val))
 
-    return collect(obj)
+    return collect(item.concat(param))
 }
 
 module.exports = {

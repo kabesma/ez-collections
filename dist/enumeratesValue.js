@@ -14,7 +14,7 @@ function getValueFilterConcat(param){
     } else if(param instanceof Object){
         let result = []
         let obj = Object.entries(param)
-        obj.forEach(val => result = val[1])
+        obj.forEach(val => result.push(val[1]))
         return result
     }
 }

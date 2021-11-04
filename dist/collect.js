@@ -9,8 +9,11 @@ let item = []
  */
 function collect(args) {
     if(Array.isArray(args)){
-      item = args
-      return {
+        item = args
+    } else {
+        item = arr(args) 
+    }
+    return {
         'all': all,
         'avg': avg,
         'chunk': chunk,
@@ -18,8 +21,11 @@ function collect(args) {
         'collect': collectx,
         'combine': combine,
         'concat': concat,
-      }
     }
+}
+
+const arr = (...args) => {
+    return args
 }
 
 const all = () => {
@@ -63,10 +69,10 @@ const combine = (param) => {
 
 const concat = (param) => {
     let obj = []
-    param.forEach((index) => {
-        obj.push(index)
-    })
 
+    Object.values(param).forEach(val => {
+        obj = item.concat(val)
+    })
 
     return collect(item.concat(obj))
 //     let obj

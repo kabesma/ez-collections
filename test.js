@@ -42,7 +42,7 @@ let combined = collection.combine(['George', 29])
 console.log(combined.all())
 
 
-console.log('\n--- Combine ---')
+console.log('\n--- Concat ---')
 
 collection = collect(['John Doe']);
 

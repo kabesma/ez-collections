@@ -1,5 +1,7 @@
 'use strict'
 
+const { getArrayableItems } = require('./enumeratesValue.js')
+
 let item = []
 
 /**
@@ -8,11 +10,7 @@ let item = []
  * @return {function} The function call
  */
 function collect(args) {
-    if(Array.isArray(args)){
-        item = args
-    } else {
-        item = arr(args) 
-    }
+    item = getArrayableItems(args)
     return {
         'all': all,
         'avg': avg,

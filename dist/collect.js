@@ -66,10 +66,11 @@ const combine = (param) => {
 }
 
 const concat = (param) => {
-    let obj = []
-//     param.forEach(val => item.concat(val))
+    let obj = getArrayableItems(param)
+    let result = []
+    obj.forEach(val => result = val)
 
-    return collect(item.concat(param))
+    return collect(item.concat(result))
 }
 
 module.exports = {

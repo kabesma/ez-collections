@@ -56,8 +56,8 @@ const collectx = () => {
 }
 
 const combine = (param) => {
-    const obj = item.reduce((r, e, i) => (r[e]= param[i], r), {})
-    return obj
+    const obj = item.reduce((r, e, i) => (r[e]= param[i], r), [])
+    return collect(obj)
 }
 
 module.exports = {

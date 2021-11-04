@@ -35,7 +35,7 @@ console.log(collectionB.all())
 
 
 console.log('\n--- Combine ---')
-let collection = collect(['name', 'age'])
+collection = collect(['name', 'age'])
 
 let combined = collection.combine(['George', 29])
 

@@ -83,3 +83,18 @@ let collectionB = collectionA.collect()
 console.log(collectionB.all())
 // [1, 2, 3]
 ```
+
+## combine
+The combine method combines the values of the collection, as keys, with the values of another array or collection:
+
+```js
+const { collect } = require("ez-collections")
+
+let collection = collect(['name', 'age'])
+
+let combined = collection.combine(['George', 29])
+
+console.log(combined.all())
+
+// ['name' => 'George', 'age' => 29]
+```

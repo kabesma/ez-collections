@@ -98,3 +98,13 @@ console.log(combined.all())
 
 // ['name' => 'George', 'age' => 29]
 ```
+## concat
+The concat method appends the given array or collection's values onto the end of another collection:
+
+let collection = collect(['John Doe'])
+
+let concatenated = collection.concat(['Jane Doe']).concat({'name': 'Johnny Doe'})
+
+console.log(concatenated.all())
+
+// ['John Doe', 'Jane Doe', 'Johnny Doe']

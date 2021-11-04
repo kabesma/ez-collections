@@ -1,6 +1,6 @@
 'use strict'
 
-const { getArrayableItems } = require('./enumeratesValue.js')
+const { getArrayableItems,getValueFilterConcat } = require('./enumeratesValue.js')
 
 let item = []
 
@@ -62,11 +62,8 @@ const combine = (param) => {
 }
 
 const concat = (param) => {
-    let obj = getArrayableItems(param)
-    let result = []
-    obj.forEach(val => result = val[1] ? val[1] : val)
-
-    return collect(item.concat(result))
+    let obj = getValueFilterConcat(param)
+    return collect(item.concat(obj))
 }
 
 module.exports = {

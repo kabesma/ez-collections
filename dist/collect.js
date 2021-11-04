@@ -62,7 +62,12 @@ const combine = (param) => {
 }
 
 const concat = (param) => {
-    let obj = item.concat(param)
+    let obj
+    if (!Array.isArray(param)){
+        obj = Object.values(param)
+    } else {
+        obj = item.concat(param)
+    }
     return collect(obj)
 }
 

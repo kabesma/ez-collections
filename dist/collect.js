@@ -1,8 +1,6 @@
 'use strict'
 
 let item = []
-let temp
-const newArr = []
 
 /**
  * Main Function
@@ -26,12 +24,8 @@ const all = () => {
   return item
 }
 
-const collectx = () => {
-  return collect(item)
-}
-
-
 const avg = (param = null) => {
+  let temp
   if (param == null) {
     return item.reduce((acc, curr) => acc + curr) / item.length
   }
@@ -44,8 +38,9 @@ const avg = (param = null) => {
 }
 
 const chunk = (param) => {
-  while (item.length) newArr.push(item.splice(0, param))
-  return newArr
+  let obj = []
+  while (item.length) obj.push(item.splice(0, param))
+  return obj
 }
 
 const collapse = () => {
@@ -53,6 +48,15 @@ const collapse = () => {
     return prev.concat(next)
   })
   return collect(result)
+}
+
+const collectx = () => {
+  return collect(item)
+}
+
+const combine = (param) => {
+    const obj = item.reduce((r, e, i) => (r[e]= param[i], r), {})
+    return obj
 }
 
 module.exports = {

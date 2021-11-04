@@ -50,4 +50,4 @@ let concatenated = collection.concat(['Jane Doe']).concat({'name':'Johnny Doe'})
 
 console.log(concatenated.all())
 
-console.log(typeof [{'name':'john'}])
+// console.log(typeof [{'name':'john'}])

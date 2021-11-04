@@ -6,6 +6,6 @@ function getArrayableItems(param){
     }
 }
 
-module.export = {
+module.exports = {
     getArrayableItems,
 }

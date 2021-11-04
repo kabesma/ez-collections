@@ -32,3 +32,11 @@ console.log('\n--- Collect ---')
 let collectionA = collect([{'name':'Desk', 'price':100}])
 let collectionB = collectionA.collect()
 console.log(collectionB.all())
+
+
+console.log('\n--- Combine ---')
+let collection = collect(['name', 'age'])
+
+let combined = collection.combine(['George', 29])
+
+console.log(combined.all())

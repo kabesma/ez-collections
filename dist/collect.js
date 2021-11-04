@@ -15,7 +15,8 @@ function collect(args) {
         'avg': avg,
         'chunk': chunk,
         'collapse': collapse,
-        'collect': collectx
+        'collect': collectx,
+        'combine': combine,
       }
     }
 }

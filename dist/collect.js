@@ -19,6 +19,7 @@ function collect(args) {
         'collect': collectx,
         'combine': combine,
         'concat': concat,
+        'contains': contains,
     }
 }
 
@@ -63,6 +64,10 @@ const combine = (param) => {
 const concat = (param) => {
     let obj = getValueFilterConcat(param)
     return collect(item.concat(obj))
+}
+
+const contains = (param) => {
+    return item.includes(param)
 }
 
 module.exports = {

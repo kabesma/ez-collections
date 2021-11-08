@@ -50,4 +50,11 @@ let concatenated = collection.concat(['Jane Doe']).concat({'name':'Johnny Doe','
 
 console.log(concatenated.all())
 
+collection = collect([1, 2, 3, 4, 5]);
+
+let result = collection.contains(function (value, key) {
+    return value > 5;
+})
+
+console.log(result)
 // console.log(collect({'name':'johnny'}).all())

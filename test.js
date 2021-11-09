@@ -1,6 +1,6 @@
 'use strict'
 
-const { collect } = require('./index.js')
+const { collect } = require('./app/index')
 
 console.log('--- All ---')
 console.log(collect([1, 1, 2, 4]).all())

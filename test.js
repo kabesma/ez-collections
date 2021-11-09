@@ -33,14 +33,12 @@ let collectionA = collect([{'name':'Desk', 'price':100}])
 let collectionB = collectionA.collect()
 console.log(collectionB.all())
 
-
 console.log('\n--- Combine ---')
 collection = collect(['name', 'age'])
 
 let combined = collection.combine(['George', 29])
 
 console.log(combined.all())
-
 
 console.log('\n--- Concat ---')
 
@@ -50,11 +48,19 @@ let concatenated = collection.concat(['Jane Doe']).concat({'name':'Johnny Doe','
 
 console.log(concatenated.all())
 
-collection = collect([1, 2, 3, 4, 5]);
+console.log('\n--- Contains ---')
 
-let result = collection.contains(function (value, key) {
-    return value > 5;
-})
+collection = collect([
+    {'product':'Desk', 'price': 100},
+    {'product':'New York', 'price': 50},
+    {'product':'Bookcase', 'price': 150},
+]);
 
-console.log(result)
-// console.log(collect({'name':'johnny'}).all())
+let result = collection.contains('Desk');
+console.log(result)// true
+
+result = collection.contains(['product', 'Desk']);
+console.log(result)// true
+
+result = collection.contains('New York');
+console.log(result)// true

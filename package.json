@@ -1,6 +1,6 @@
 {
   "name": "ez-collections",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "description": "The package provides a fluent, convenient wrapper for working with arrays of data.",
   "main": "app/index.js",
   "scripts": {

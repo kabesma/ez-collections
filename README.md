@@ -154,3 +154,17 @@ collection->contains('product', 'Bookcase');
 ```
 
 The contains method uses "loose" comparisons when checking item values, meaning a string with an integer value will be considered equal to an integer of the same value.
+
+## count
+
+The count method returns the total number of items in the collection:
+
+```js
+const { collect } = require("ez-collections");
+
+let collection = collect([1, 2, 3, 4]);
+
+collection.count();
+
+// 4
+```

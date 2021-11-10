@@ -144,6 +144,9 @@ const contains = (param) => {
   }
 }
 
+/**
+ * 
+ */
 const count = () => {
   return item.length
 }

@@ -20,6 +20,44 @@ function collect(args) {
         'combine': combine,
         'concat': concat,
         'contains': contains,
+        'count': count,
+        'diff': diff,
+        'diffAssoc': diffAssoc,
+        'diffKeys': diffKeys,
+        'first': first,
+        'each': each,
+        'every': every,
+        'filter': filter,
+        'flip': flip,
+        'groupBy': groupBy,
+        'flat': flat,
+        // 'firstWhere': firstWhere,
+        // 'get': get,
+        // 'groupBy': groupBy,
+        // 'has': has,
+        // 'implode': implode,
+        // 'intersect': intersect,
+        // 'intersectByKeys': intersectByKeys,
+        // 'isEmpty': isEmpty,
+        // 'isNotEmpty': isNotEmpty,
+        // 'last': last,
+        // 'lastWhere': lastWhere,
+        // 'map': map,
+        // 'mapInto': mapInto,
+        // 'mapWithKeys': mapWithKeys,
+        // 'max': max,
+        // 'min': min,
+        // 'partition': partition,
+        // 'reject': reject,
+        // 'rejectInto': rejectInto,
+        // 'rejectWithKeys': rejectWithKeys,
+        // 'reverse': reverse,
+        // 'search': search,
+        // 'searchFrom': searchFrom,
+        // 'shift': shift,
+        // 'shuffle': shuffle,
+        // 'slice': slice,
+        // 'sort': sort,
     }
 }
 
@@ -145,10 +183,143 @@ const contains = (param) => {
 }
 
 /**
- * 
+ * @param {array} param The arguments enter value.
+ * @return {array} The function call
+ * @example
+ * collect([1, 2, 3]).count()
+ * // 3
  */
 const count = () => {
   return item.length
+}
+
+/**
+ * @param {array} param The arguments enter value.
+ * @return {array} The function call
+ * @example
+ * collect([1, 2, 3]).diff([2])
+ * // [1, 3]
+ */
+const diff = (param) => {
+  let obj = item.filter(val => !param.includes(val))
+  return collect(obj)
+}
+
+/**
+ * @param {array} param The arguments enter value.
+ * @return {array} The function call
+ * @example
+ * collect([1, 2, 3]).diffAssoc(['name', 'age'])
+ * // [ name: 'George', age: 29 ]
+ */
+const diffAssoc = (param) => {
+  let obj = item.filter(val => !param.includes(val[param[0]]))
+  return collect(obj)
+}
+
+/**
+ * @param {array} param The arguments enter value.
+ * @return {array} The function call
+ * @example
+ * collect([1, 2, 3]).diffKeys(['name', 'age'])
+ * // [ name: 'George', age: 29 ]
+ */
+const diffKeys = (param) => {
+  let obj = item.filter(val => !param.includes(val[param[0]]))
+  return collect(obj)
+}
+
+/**
+ * @param {array} param The arguments enter value.
+ * @return {array} The function call
+ * @example
+ * collect([1, 2, 3]).each(function(val) {
+ *    return val * 2
+ * })
+ * // [2, 4, 6]
+ */
+const each = (param) => {
+  item.forEach(val => {
+    param(val)
+  })
+  return item
+}
+
+/**
+ * @param {array} param The arguments enter value.
+ * @return {array} The function call
+ * @example
+ * collect([1, 2, 3]).every(function(val) {
+ *    return val > 1
+ * })
+ * // [2, 4, 6]
+ */
+const every = (param) => {
+  return item.every(val => {
+    return param(val)
+  })
+}
+
+/**
+ * @param {array} param The arguments enter value.
+ * @return {array} The function call
+ * @example
+ * collect([1, 2, 3]).filter(function(val) {
+ *    return val > 1
+ * })
+ * // [2, 4, 6]
+ */
+const filter = (param) => {
+  return item.filter(val => {
+    return param(val)
+  })
+}
+
+/**
+ * @param {array} param The arguments enter value.
+ * @return {array} The function call
+ * @example
+ * collect([1, 2, 3]).first()
+ * // 1
+ */
+const first = (param) => {
+  return item[0]
+}
+
+/**
+ * @param {array} param The arguments enter value.
+ * @return {array} The function call
+ * @example
+ * collect([1, 2, 3]).flat()
+ * // [1, 2, 3]
+ */
+const flat = (param) => {
+  return item.flat(param)
+}
+
+/**
+ * @param {array} param The arguments enter value.
+ * @return {array} The function call
+ * @example
+ * collect([1, 2, 3]).flip()
+ * // [3, 2, 1]
+ */
+const flip = () => {
+  return item.reverse()
+}
+
+/**
+ * @param {array} param The arguments enter value.
+ * @return {array} The function call
+ * @example
+ * collect([1, 2, 3]).groupBy(function(val) {
+ *    return val > 1
+ * })
+ * // [2, 4, 6]
+ */
+const groupBy = (param) => {
+  let obj = item.reduce((r, e, i) => (r[param(e)] = r[param(e)] || [], r[param(e)].push(e), r), {})
+  return collect(obj)
 }
 
 module.exports = {

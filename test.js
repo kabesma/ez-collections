@@ -64,3 +64,24 @@ console.log(result)// true
 
 result = collection.contains('New York');
 console.log(result)// true
+
+console.log('\n--- Flat ---')
+
+collection = collect([1, 2, 3]).flat()
+console.log(collection)// true
+
+collection = collect([1, 2, 3]).groupBy(function(val) {
+    return val > 1
+})
+console.log(collection.all())// true
+
+console.log('\n--- Flip ---')
+collection = collect([1, 2, 3]).flip()
+console.log(collection)// true
+
+console.log('\n--- Each ---')
+
+collection = collect([1, 2, 3]).each(function(val) {
+    return val * 2
+})
+console.log(collection)

@@ -281,6 +281,7 @@ const count = () => {
  * @example
  * collect([1, 2, 3]).diff([2])
  * // [1, 3]
+ * x
  */
 const diff = (param) => {
   let obj = item.filter(val => !param.includes(val))
@@ -293,6 +294,7 @@ const diff = (param) => {
  * @example
  * collect([1, 2, 3]).diffAssoc(['name', 'age'])
  * // [ name: 'George', age: 29 ]
+ * x
  */
 const diffAssoc = (param) => {
   let obj = item.filter(val => !param.includes(val[param[0]]))
@@ -305,6 +307,7 @@ const diffAssoc = (param) => {
  * @example
  * collect([1, 2, 3]).diffKeys(['name', 'age'])
  * // [ name: 'George', age: 29 ]
+ * x
  */
 const diffKeys = (param) => {
   let obj = item.filter(val => !param.includes(val[param[0]]))
@@ -321,10 +324,9 @@ const diffKeys = (param) => {
  * // [2, 4, 6]
  */
 const each = (param) => {
-  item.forEach(val => {
-    param(val)
-  })
-  return item
+  let obj = []
+  item.forEach(val => obj.push(param(val)) )
+  return obj
 }
 
 /**
@@ -334,7 +336,8 @@ const each = (param) => {
  * collect([1, 2, 3]).every(function(val) {
  *    return val > 1
  * })
- * // [2, 4, 6]
+ * // false
+ * x
  */
 const every = (param) => {
   return item.every(val => {
@@ -397,7 +400,7 @@ const flip = () => {
  * collect([1, 2, 3]).groupBy(function(val) {
  *    return val > 1
  * })
- * // [2, 4, 6]
+ * // [ [ 'false', [ 1 ] ], [ 'true', [ 2, 3 ] ] ]
  */
 const groupBy = (param) => {
   let obj = item.reduce((r, e, i) => (r[param(e)] = r[param(e)] || [], r[param(e)].push(e), r), {})

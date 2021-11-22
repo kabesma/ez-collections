@@ -171,133 +171,133 @@ collection.count();
 
 # Project List
 
-    [x] all
-    [x] avg
-    [x] chunk
-    [ ] chunkWhile
-    [x] collapse
-    [x] collect
-    [x] combine
-    [x] concat
-    [x] contains
-    [ ] containsStrict
-    [x] count
-    [x] diff
-    [x] diffAssoc
-    [x] diffKeys
-    [ ] dump
-    [ ] duplicates
-    [ ] duplicatesStrict
-    [x] each
-    [ ] eachSpread
-    [x] every
-    [ ] except
-    [x] filter
-    [ ] countBy
-    [ ] crossJoin
-    [ ] dd
-    [x] first
-    [ ] firstWhere
-    [x] flat
-    [ ] flatMap
-    [ ] flatten
-    [x] flip
-    [ ] forget
-    [ ] forPage
-    [ ] get
-    [x] groupBy
-    [ ] has
-    [ ] implode
-    [ ] intersect
-    [ ] intersectByKeys
-    [ ] isEmpty
-    [ ] isNotEmpty
-    [ ] join
-    [ ] keyBy
-    [ ] keys
-    [ ] last
-    [ ] macro
-    [ ] make
-    [ ] map
-    [ ] mapInto
-    [ ] mapSpread
-    [ ] mapToGroups
-    [ ] mapWithKeys
-    [ ] max
-    [ ] median
-    [ ] merge
-    [ ] mergeRecursive
-    [ ] min
-    [ ] mode
-    [ ] nth
-    [ ] only
-    [ ] pad
-    [ ] partition
-    [ ] pipe
-    [ ] pipeInto
-    [ ] pluck
-    [ ] pop
-    [ ] prepend
-    [ ] pull
-    [ ] push
-    [ ] put
-    [ ] random
-    [ ] range
-    [ ] reduce
-    [ ] reduceSpread
-    [ ] reject
-    [ ] replace
-    [ ] replaceRecursive
-    [ ] reverse
-    [ ] search
-    [ ] shift
-    [ ] shuffle
-    [ ] sliding
-    [ ] skip
-    [ ] skipUntil
-    [ ] skipWhile
-    [ ] slice
-    [ ] sole
-    [ ] some
-    [ ] sort
-    [ ] sortBy
-    [ ] sortByDesc
-    [ ] sortDesc
-    [ ] sortKeys
-    [ ] sortKeysDesc
-    [ ] splice
-    [ ] split
-    [ ] splitIn
-    [ ] sum
-    [ ] take
-    [ ] takeUntil
-    [ ] takeWhile
-    [ ] tap
-    [ ] times
-    [ ] toArray
-    [ ] toJson
-    [ ] transform
-    [ ] union
-    [ ] unique
-    [ ] uniqueStrict
-    [ ] unless
-    [ ] unlessEmpty
-    [ ] unlessNotEmpty
-    [ ] unwrap
-    [ ] values
-    [ ] when
-    [ ] whenEmpty
-    [ ] whenNotEmpty
-    [ ] where
-    [ ] whereStrict
-    [ ] whereBetween
-    [ ] whereIn
-    [ ] whereInStrict
-    [ ] whereInstanceOf
-    [ ] whereNotBetween
-    [ ] whereNotIn
-    [ ] whereNotInStrict
-    [ ] whereNotNull
-    [ ] whereNull
-    [ ] wrap
-    [ ] zip
+- [x] all
+- [x] avg
+- [x] chunk
+- [ ] chunkWhile
+- [x] collapse
+- [x] collect
+- [x] combine
+- [x] concat
+- [x] contains
+- [ ] containsStrict
+- [x] count
+- [x] diff
+- [x] diffAssoc
+- [x] diffKeys
+- [ ] dump
+- [ ] duplicates
+- [ ] duplicatesStrict
+- [x] each
+- [ ] eachSpread
+- [x] every
+- [ ] except
+- [x] filter
+- [ ] countBy
+- [ ] crossJoin
+- [ ] dd
+- [x] first
+- [ ] firstWhere
+- [x] flat
+- [ ] flatMap
+- [ ] flatten
+- [x] flip
+- [ ] forget
+- [ ] forPage
+- [ ] get
+- [x] groupBy
+- [ ] has
+- [ ] implode
+- [ ] intersect
+- [ ] intersectByKeys
+- [ ] isEmpty
+- [ ] isNotEmpty
+- [ ] join
+- [ ] keyBy
+- [ ] keys
+- [ ] last
+- [ ] macro
+- [ ] make
+- [ ] map
+- [ ] mapInto
+- [ ] mapSpread
+- [ ] mapToGroups
+- [ ] mapWithKeys
+- [ ] max
+- [ ] median
+- [ ] merge
+- [ ] mergeRecursive
+- [ ] min
+- [ ] mode
+- [ ] nth
+- [ ] only
+- [ ] pad
+- [ ] partition
+- [ ] pipe
+- [ ] pipeInto
+- [ ] pluck
+- [ ] pop
+- [ ] prepend
+- [ ] pull
+- [ ] push
+- [ ] put
+- [ ] random
+- [ ] range
+- [ ] reduce
+- [ ] reduceSpread
+- [ ] reject
+- [ ] replace
+- [ ] replaceRecursive
+- [ ] reverse
+- [ ] search
+- [ ] shift
+- [ ] shuffle
+- [ ] sliding
+- [ ] skip
+- [ ] skipUntil
+- [ ] skipWhile
+- [ ] slice
+- [ ] sole
+- [ ] some
+- [ ] sort
+- [ ] sortBy
+- [ ] sortByDesc
+- [ ] sortDesc
+- [ ] sortKeys
+- [ ] sortKeysDesc
+- [ ] splice
+- [ ] split
+- [ ] splitIn
+- [ ] sum
+- [ ] take
+- [ ] takeUntil
+- [ ] takeWhile
+- [ ] tap
+- [ ] times
+- [ ] toArray
+- [ ] toJson
+- [ ] transform
+- [ ] union
+- [ ] unique
+- [ ] uniqueStrict
+- [ ] unless
+- [ ] unlessEmpty
+- [ ] unlessNotEmpty
+- [ ] unwrap
+- [ ] values
+- [ ] when
+- [ ] whenEmpty
+- [ ] whenNotEmpty
+- [ ] where
+- [ ] whereStrict
+- [ ] whereBetween
+- [ ] whereIn
+- [ ] whereInStrict
+- [ ] whereInstanceOf
+- [ ] whereNotBetween
+- [ ] whereNotIn
+- [ ] whereNotInStrict
+- [ ] whereNotNull
+- [ ] whereNull
+- [ ] wrap
+- [ ] zip
